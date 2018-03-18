@@ -1,0 +1,35 @@
+#!/bin/sh
+#===============================================================================
+#
+#          FILE:  setSC.sh
+#
+#         USAGE:  source ./setSC.sh
+#
+#   DESCRIPTION: Set the environment for SystemC-UVM use.
+#
+#       OPTIONS:  ---
+#  REQUIREMENTS:  ---
+#          BUGS:  ---
+#         NOTES:  ---
+#        AUTHOR:  Douglas Lohmann, dlohmann0@gmail.com
+#       COMPANY:  Dissociated Press
+#       VERSION:  1.0
+#       CREATED:  03/05/2017 17:38:00 PM MDT
+#      REVISION:  ---
+#===============================================================================
+
+# SET THESE PATHS
+SYSTEMC_PREFIX=/opt/systemc
+
+# SystemC configuration
+SYSTEMC_EXEC_PREFIX=$SYSTEMC_PREFIX
+SYSTEMC_INCLUDEDIR=$SYSTEMC_PREFIX/include
+SYSTEMC_LIBDIR=$SYSTEMC_EXEC_PREFIX/lib-linux64
+export SC_PATH=$SYSTEMC_EXEC_PREFIX
+export SC_INCLUDE=$SYSTEMC_INCLUDEDIR
+export SC_LIB=$SYSTEMC_LIBDIR
+echo "SC_LIB: "$SC_LIB
+
+# LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$SC_LIB":"$LD_LIBRARY_PATH
+export SYSTEMC=$SYSTEMC_PREFIX
