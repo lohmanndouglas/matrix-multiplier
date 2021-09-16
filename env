@@ -1,0 +1,13 @@
+# SET THESE PATHS
+SYSTEMC_PREFIX=/usr/local/systemc-2.3.3
+
+# SystemC configuration
+SYSTEMC_EXEC_PREFIX=/usr/local/systemc-2.3.3
+SYSTEMC_INCLUDEDIR=/usr/local/systemc-2.3.3/include
+SYSTEMC_LIBDIR=/usr/local/systemc-2.3.3/lib-linux64
+SC_PATH=/usr/local/systemc-2.3.3
+SC_INCLUDE=/usr/local/systemc-2.3.3/include
+SC_LIB=/usr/local/systemc-2.3.3/lib-linux64
+
+# LD_LIBRARY_PATH
+SYSTEMC=/usr/local/systemc-2.3.3

@@ -19,7 +19,7 @@
 #===============================================================================
 
 # SET THESE PATHS
-SYSTEMC_PREFIX=/opt/systemc
+SYSTEMC_PREFIX=/usr/local/systemc-2.3.3
 
 # SystemC configuration
 SYSTEMC_EXEC_PREFIX=$SYSTEMC_PREFIX
